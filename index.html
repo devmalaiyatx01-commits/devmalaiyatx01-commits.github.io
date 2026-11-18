@@ -64,6 +64,7 @@ img,svg{display:block;max-width:100%}
 .dark{background:var(--panel);color:var(--panel-ink)}
 .dark .tag{color:var(--copper)}
 .mono{font-family:var(--serif);font-style:italic;font-size:clamp(120px,17vw,280px);line-height:.8;margin:auto 0 0;color:var(--panel-ink)}
+.portrait{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:4/5;object-fit:cover;margin:clamp(28px,3.5vw,56px) 0 0}
 .facts{list-style:none;margin:clamp(24px,3vw,48px) 0 0;padding:0;border-top:1px solid #3A3835}
 .facts li{display:flex;justify-content:space-between;gap:24px;padding:14px 0;border-bottom:1px solid #3A3835;font-size:clamp(15px,1.25vw,19px)}
 .facts li span:first-child{color:#A8A39B}
@@ -150,6 +151,7 @@ img,svg{display:block;max-width:100%}
   .tag{display:none}
   .num{display:none}
   .mono{margin-top:40px}
+  .portrait{max-width:100%}
 }
 @media (max-width:520px){
   .toc,.skills{grid-template-columns:1fr}
@@ -201,7 +203,7 @@ img,svg{display:block;max-width:100%}
   </div>
   <div class="pane dark">
     <div class="tag"><b>Dev Malaiya</b>AI &amp; Automation Engineer</div>
-    <p class="mono" aria-hidden="true">DM</p>
+    <img class="portrait" src="profile.jpg" alt="Portrait of Dev Malaiya" width="800" height="1000">
     <ul class="facts">
       <li><span>Education</span><span>BITS Pilani, 2022 - 2027</span></li>
       <li><span>Degree</span><span>B.E. Mechanical + M.Sc. Mathematics</span></li>
